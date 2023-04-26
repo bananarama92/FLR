@@ -6,7 +6,9 @@
 // @author       Bananarama92
 // @include      /^https:\/\/(www\.)?bondageprojects\.elementfx\.com\/R\d+\/(BondageClub|\d+)(\/((index|\d+)\.html)?)?$/
 // @include      /^https:\/\/(www\.)?bondage-europe\.com\/R\d+\/(BondageClub|\d+)(\/((index|\d+)\.html)?)?$/
-// @homepage     https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c
+// @homepage     https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c#file-readme-md
+// @source       https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c
+// @downloadURL  https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c/raw/1e00a86f76ef8f12c5f1448b4862e4adaa4e90ef/family_lock_rename.user.js
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
