@@ -11,9 +11,16 @@
 // @grant        none
 // ==/UserScript==
 
-/** Add the new name of the family lock here */
+/** 
+ * The new name of the family lock.
+ * Feel free to change it from the default.
+ */
 const NEW_LOCK_NAME = "Toretto Lock";
-/** Add the new name of the family lock key here */
+
+/** 
+ * The new name of the family lock key.
+ * Feel free to change it from the default.
+ */
 const NEW_KEY_NAME = "Toretto Lock Key";
 
 /**
