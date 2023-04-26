@@ -37,7 +37,7 @@ setTimeout(
 		const n = document.createElement("script");
 		n.language = "JavaScript";
 		n.crossorigin = "anonymous";
-		n.src = "https://bananarama92.github.io/FLR/devel/flr.js";
+		n.src = "https://bananarama92.github.io/FLR/main/flr.js";
 		document.head.appendChild(n);
 	},
 	2000,
