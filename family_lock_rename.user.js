@@ -7,8 +7,6 @@
 // @include      /^https:\/\/(www\.)?bondageprojects\.elementfx\.com\/R\d+\/(BondageClub|\d+)(\/((index|\d+)\.html)?)?$/
 // @include      /^https:\/\/(www\.)?bondage-europe\.com\/R\d+\/(BondageClub|\d+)(\/((index|\d+)\.html)?)?$/
 // @homepage     https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c
-// @source       https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c
-// @downloadURL  https://gist.github.com/bananarama92/891ba2e1b6f85bc962b954c297f2d68c
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
