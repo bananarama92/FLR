@@ -13,7 +13,7 @@ declare const NEW_LOCK_NAME: undefined | string;
 declare const NEW_KEY_NAME: undefined | string;
 
 /** The FLR version */
-const VERSION = "1.0.1";
+const VERSION = "1.0.2";
 
 bcModSdk.registerMod({
     name: "FLR",

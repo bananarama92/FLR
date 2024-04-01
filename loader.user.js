@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FLR - Family Lock Rename
 // @namespace    FLR
-// @version      1.0.1
+// @version      1.0.2
 // @description  Loader of Bananarama92's "Family Lock Rename" mod
 // @author       Bananarama92
 // @include      /^https:\/\/(www\.)?bondageprojects\.elementfx\.com\/R\d+\/(BondageClub|\d+)(\/((index|\d+)\.html)?)?$/
