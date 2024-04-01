@@ -12,6 +12,7 @@
 // @updateURL    https://github.com/bananarama92/FLR/raw/main/family_lock_rename.user.js
 // @run-at       document-end
 // @grant        none
+// @license      Apache-2.0
 // ==/UserScript==
 
 /**
@@ -30,15 +31,15 @@ const NEW_KEY_NAME = "Toretto Lock Key";
 
 // eslint-disable-next-line no-restricted-globals
 setTimeout(
-	() => {
-		window.NEW_LOCK_NAME = NEW_LOCK_NAME;
-		window.NEW_KEY_NAME = NEW_KEY_NAME;
+    () => {
+        window.NEW_LOCK_NAME = NEW_LOCK_NAME;
+        window.NEW_KEY_NAME = NEW_KEY_NAME;
 
-		const n = document.createElement("script");
-		n.language = "JavaScript";
-		n.crossorigin = "anonymous";
-		n.src = "https://bananarama92.github.io/FLR/main/flr.js";
-		document.head.appendChild(n);
-	},
-	2000,
+        const n = document.createElement("script");
+        n.language = "JavaScript";
+        n.crossorigin = "anonymous";
+        n.src = "https://bananarama92.github.io/FLR/main/flr.js";
+        document.head.appendChild(n);
+    },
+    2000,
 );

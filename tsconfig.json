@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES2018",
+        "target": "ES2021",
         "lib": ["ESNext", "dom"],
         "types": [],
         "module": "ESNext",
@@ -17,5 +17,10 @@
         "esModuleInterop": true,
         "resolveJsonModule": true
     },
-    "include": ["./src/**/*", "rollup.config.mjs"]
+    "include": [
+        "node_modules/bc-stubs/bc/**/*.d.ts",
+        "./src/**/*",
+        "rollup.config.mjs",
+        "loader.user.js"
+    ]
 }
