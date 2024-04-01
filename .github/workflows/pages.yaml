@@ -27,7 +27,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: npm install
       - run: npm list
       - run: npm list --all
@@ -36,11 +36,12 @@ jobs:
       - run: npm run lint
       - run: |
           mkdir ./dist/main
-          mv ./package-lock.json ./src/loader.user.js ./dist/flr.js ./dist/flr.js.map ./dist/main/
-      - uses: actions/upload-artifact@v3
+          mv ./package-lock.json ./dist/flr.js ./dist/flr.js.map ./dist/main/
+      - uses: actions/upload-artifact@v4
         with:
           name: artifact
           path: ./dist
+
   deploy:
     needs: [build]
     environment:
@@ -48,22 +49,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: artifact
           path: dist
+
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
+
       - name: Attach wheels to GitHub release
         if: github.event_name == 'release'
-        uses: AButler/upload-release-assets@v2.0.2
+        uses: AButler/upload-release-assets@v3.0
         with:
           files: 'dist/main/package-lock.json;dist/main/flr.js;dist/main/flr.js.map'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
