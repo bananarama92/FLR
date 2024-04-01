@@ -61,7 +61,7 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
       - name: Attach wheels to GitHub release
         if: github.event_name == 'release'
         uses: AButler/upload-release-assets@v3.0
